@@ -15,10 +15,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 from markov_reward_process import MarkovRewardProcess, MRPVisualizer
 
-# 设置中文字体和图形样式
+# 设置图形样式
+plt.style.use('seaborn-v0_8')
+
+# 设置中文字体（必须在样式设置之后）
 plt.rcParams['font.sans-serif'] = ['SimHei', 'Microsoft YaHei']
 plt.rcParams['axes.unicode_minus'] = False
-plt.style.use('seaborn-v0_8')
 
 
 def classroom_demo():
